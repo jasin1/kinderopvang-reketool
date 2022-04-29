@@ -3,6 +3,7 @@ console.log("We are online!!");
 // git add .
 // git commit -m "message..."
 //git push
+//-------------- git commands ------------//
 
 //console.log('tabon');
 
@@ -719,3 +720,23 @@ $(".back_btn").mousedown("click", function () {
   $(".back_btn").hide();
   checkAll();
 });
+
+
+//----- responsive --------- //
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    console.log("Responsive");
+  } else {
+    console.log("Not!Responsive");
+  }
+}
+
+var x = window.matchMedia("(max-width: 479px)")
+myFunction(x) // Call listener function at run time
+x.addEventListener(myFunction) // Attach listener function on state changes
+
+//-------------- git commands ------------//
+// git add .
+// git commit -m "message..."
+//git push
+//-------------- git commands ------------//
