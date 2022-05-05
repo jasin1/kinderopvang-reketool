@@ -726,7 +726,7 @@ $(".back_btn").mousedown("click", function () {
 const opvang = document.querySelectorAll(".check_opvang");
 
 const btnWrapper = document.querySelector(".btn-wrapper");
-const check = ['Voorschoolse','Naschoolse','Buitenschoolse','dag'];
+const check = ['voorschoolse','naschoolse','buitenschoolse','dag'];
 
 const indicator = document.querySelector(".indicator");
 
