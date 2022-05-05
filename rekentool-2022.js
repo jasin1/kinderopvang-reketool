@@ -723,17 +723,47 @@ $(".back_btn").mousedown("click", function () {
 
 
 //----- responsive --------- //
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    console.log("Responsive");
-  } else {
-    console.log("Not!Responsive");
+const opvang = document.querySelectorAll(".check_opvang");
+
+const btnWrapper = document.querySelector(".btn-wrapper");
+const check = ['Voorschoolse opvang','Naschoolse opvang','Buitenschoolse opvang','Dag opvang'];
+
+const indicator = document.querySelector(".indicator");
+
+function createBtns(){
+  for(let i=0; i < check.length; i++){
+    var btn = document.createElement("div");
+    btn.className = "btn";
+    btn.innerText = check[i];
+    btnWrapper.appendChild(btn);
   }
 }
+createBtns();
 
-var x = window.matchMedia("(max-width: 479px)")
-myFunction(x) // Call listener function at run time
-x.addEventListener(myFunction) // Attach listener function on state changes
+const nodeList = btnWrapper.childNodes;
+
+
+
+function checkingBox(){
+  for(let i=0; i < nodeList.length; i++){
+        nodeList[i].addEventListener('click', function handleClick(){
+          if(nodeList[i].innerText == opvang[i].value){
+            console.log(opvang[i].value);
+            opvang[i].checked = true;
+            indicator.textContent = nodeList[i].innerText;
+            btnWrapper.classList.toggle('hide');
+          }
+        })
+
+      }
+}
+
+checkingBox();
+
+function show(){
+  btnWrapper.classList.toggle('hide');
+}
+
 
 //-------------- git commands ------------//
 // git add .
