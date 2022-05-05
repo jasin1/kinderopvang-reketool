@@ -749,32 +749,7 @@ function checkingBox(){
               opvang[i].checked = true;
               indicator.textContent = btnWrapper[i].innerText;
             //   btnWrapper.classList.toggle('hide');
-            //--------------------- de check echt doen ----------------
             
-            $(".tarieven").fadeIn(120);
-            $(".tarief-select").hide();
-            $(".dag-select").hide();
-        
-            soortopvang = $(this).val();
-        
-        
-            for (let i = 0; i < all_opvangs.length; i++) {
-                if (soortopvang == all_opvangs[i].naam) {
-                    console.log(all_opvangs[i].naam + ' is geselecteerd');
-                    all_opvangs[i].opvang_checker();
-                    all_opvangs[i].tarief_checker();
-                }
-            }
-
-        
-            $(".checks").prop("checked", false);
-            $(".radio_tarief").prop("checked", false);
-            selected_weekdagen.splice(0, selected_weekdagen.length);
-            selected_uren.splice(0, selected_uren.length);
-            $(".overzicht_dagen").html("Welke dagen??");
-            tarief = '0';
-        
-            $(".tarief-select").fadeIn("slow");
 
             }
           })
