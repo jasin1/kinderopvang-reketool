@@ -744,19 +744,33 @@ const nodeList = btnWrapper.childNodes;
 
 
 
-function checkingBox(){
-  for(let i=0; i < nodeList.length; i++){
-        nodeList[i].addEventListener('click', function handleClick(){
-          if(nodeList[i].innerText == opvang[i].value){
-            console.log(opvang[i].value);
-            opvang[i].checked = true;
-            indicator.textContent = nodeList[i].innerText;
-            btnWrapper.classList.toggle('hide');
-          }
-        })
+// function checkingBox(){
+//   for(let i=0; i < nodeList.length; i++){
+//         nodeList[i].addEventListener('click', function handleClick(){
+//           if(nodeList[i].innerText == opvang[i].value){
+//             console.log(opvang[i].value);
+//             opvang[i].checked = true;
+//             indicator.textContent = nodeList[i].innerText;
+//             btnWrapper.classList.toggle('hide');
+//           }
+//         })
 
-      }
-}
+//       }
+// }
+
+function checkingBox(){
+    for(let i=0; i < btnWrapper.length; i++){
+        btnWrapper[i].addEventListener('click', function handleClick(){
+            if(btnWrapper[i].innerText == opvang[i].value){
+              console.log(opvang[i].value);
+              opvang[i].checked = true;
+              indicator.textContent = btnWrapper[i].innerText;
+            //   btnWrapper.classList.toggle('hide');
+            }
+          })
+  
+        }
+  }
 
 checkingBox();
 
