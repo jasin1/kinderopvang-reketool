@@ -724,11 +724,10 @@ $(".back_btn").mousedown("click", function () {
 
 //----- responsive --------- //
 const opvang = document.querySelectorAll(".check_opvang");
-
 const btnWrapper = document.querySelector(".btn-wrapper");
 const check = ['voorschoolse','naschoolse','buitenschoolse','dag'];
-
 const indicator = document.querySelector(".indicator");
+
 
 function createBtns(){
   for(let i=0; i < check.length; i++){
@@ -740,23 +739,7 @@ function createBtns(){
 }
 createBtns();
 
-const nodeList = btnWrapper.childNodes;
 
-
-
-// function checkingBox(){
-//   for(let i=0; i < nodeList.length; i++){
-//         nodeList[i].addEventListener('click', function handleClick(){
-//           if(nodeList[i].innerText == opvang[i].value){
-//             console.log(opvang[i].value);
-//             opvang[i].checked = true;
-//             indicator.textContent = nodeList[i].innerText;
-//             btnWrapper.classList.toggle('hide');
-//           }
-//         })
-
-//       }
-// }
 
 function checkingBox(){
     for(let i=0; i < btnWrapper.length; i++){
@@ -766,6 +749,33 @@ function checkingBox(){
               opvang[i].checked = true;
               indicator.textContent = btnWrapper[i].innerText;
             //   btnWrapper.classList.toggle('hide');
+            //--------------------- de check echt doen ----------------
+            
+            $(".tarieven").fadeIn(120);
+            $(".tarief-select").hide();
+            $(".dag-select").hide();
+        
+            soortopvang = $(this).val();
+        
+        
+            for (let i = 0; i < all_opvangs.length; i++) {
+                if (soortopvang == all_opvangs[i].naam) {
+                    console.log(all_opvangs[i].naam + ' is geselecteerd');
+                    all_opvangs[i].opvang_checker();
+                    all_opvangs[i].tarief_checker();
+                }
+            }
+
+        
+            $(".checks").prop("checked", false);
+            $(".radio_tarief").prop("checked", false);
+            selected_weekdagen.splice(0, selected_weekdagen.length);
+            selected_uren.splice(0, selected_uren.length);
+            $(".overzicht_dagen").html("Welke dagen??");
+            tarief = '0';
+        
+            $(".tarief-select").fadeIn("slow");
+
             }
           })
   
