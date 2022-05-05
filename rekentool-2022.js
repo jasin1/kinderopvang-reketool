@@ -733,7 +733,7 @@ const indicator = document.querySelector(".indicator");
 function createBtns(){
   for(let i=0; i < check.length; i++){
     var btn = document.createElement("div");
-    btn.className = "btn";
+    // btn.className = "btn";
     btn.innerText = check[i];
     btnWrapper.appendChild(btn);
   }
