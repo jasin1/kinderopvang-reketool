@@ -713,6 +713,12 @@ $(".back_btn").mousedown("click", function () {
   checkAll();
 });
 
+// ---------------- Link to Code on webflow (.txt) --------------- //
+
+{/* <script src="https://uploads-ssl.webflow.com/6114bc803c97abeed8e21263/62838812d00556235e6e401f_rekentool-update-2022.txt" type="text/javascript"></script> */}
+
+
+
 
 //----- responsive --------- //
 // const opvang = document.querySelectorAll(".check_opvang");
