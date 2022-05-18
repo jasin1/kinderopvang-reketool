@@ -10,15 +10,7 @@ var dag_uren;
 var gekozenopvang;
 var eindOpvang;
 
-// attribute waarde dag-uren
-//var waar = $("#mon").attr('name');
-/*
-var maandag_check = $("#man").attr('add-value');
-var dinsdag_check = $("#dins").attr('add-value');
-var woensdag_check = $("#woe").attr('add-value');
-var donderdag_check = $("#don").attr('add-value');
-var vrijdag_check = $("#vrij").attr('add-value');
-*/
+
 
 var maandag_check = $("input[day='maandag']");
 var dinsdag_check = $("input[day='dinsdag']");
@@ -27,14 +19,6 @@ var donderdag_check = $("input[day='donderdag']");
 var vrijdag_check = $("input[day='vrijdag']");
 
 
-/*
-var maandag_check = $("input[value='maandag']");
-var dinsdag_check = $("input[value='dinsdag']");
-var woensdag_check = $("input[value='woensdag']");
-var donderdag_check = $("input[value='donderdag']");
-var vrijdag_check = $("input[value='vrijdag']");
-*/
-//console.log(dinsdag_check);
 
 
 // arrays
@@ -44,17 +28,13 @@ let totaal_kosten = [];
 
 
 // Hides
-$(".tarieven").hide();
+// $(".tarieven").hide();
+$(".tarieven").css("visibility", "hidden");
 $(".dagen").hide();
 $(".rk-overzicht-wrapper").hide();
 $(".reken_btn").hide();
 $(".back_btn").hide();
-//$("#send-totaal").hide();
-//$("#send-dagen").hide();    
 
-//let sum                 = 0;          
-
-//soort opvang objecten
 
 //--------- object voorschoolse ---------------------------------------------------------------------
 
@@ -489,8 +469,6 @@ $('#formulier').change(function () {
     soorttarief = $('input[name="tarief"]:checked').val();
     tarief_val = $('input[name="tarief"]');
     // weekdag         = $('input[name="dag"]:checked').val();
-
-
 });
 
 
@@ -499,7 +477,8 @@ $('#formulier').change(function () {
 //---------------------------------------------------------
 
 $(".opvang-select").on('change', 'input[type=radio]', function () {
-    $(".tarieven").fadeIn(120);
+    // $(".tarieven").fadeIn(120);
+    $(".tarieven").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
     $(".tarief-select").hide();
     $(".dag-select").hide();
 
@@ -518,23 +497,6 @@ $(".opvang-select").on('change', 'input[type=radio]', function () {
     }
 
 
-
-    /* for (let prop in all_opvangs) {
-        console.log(prop);
-       
-        if (soortopvang == prop.naam) {
-            console.log('objecten gevonden');
-            /*
-            console.log(prop.naam + ' object is geselecteerd');
-            prop.opvang_checker();
-            prop.tarief_checker();
-            
-        };
-        
-    };*/
-
-
-
     //bij nieuwe selectie, alle checks leeg maken
 
     $(".checks").prop("checked", false);
@@ -546,35 +508,11 @@ $(".opvang-select").on('change', 'input[type=radio]', function () {
 
     $(".tarief-select").fadeIn("slow");
 
-   // $(".reken_dim_btn").Show();
 
-
-
-    //values veranderen
-    //voorschoolse_opvang.checker();
-
-    //if(soortopvang == 'dag_opvang'){
-    // console.log('deze');
-    //soorttarief.val();
-    //$(".uur_tarief_html").html("200");
-    //}
 
 });
 
-//----------------------------------------------------------
 
-// check welke tarief gekozen is
-/*
-$(".tarieven").on('change', 'input[type=radio]', function () {
-    tarief = $(this).val();
-    console.log(tarief);
-
-});
-*/
-//voorschoolse_opvang.tarief_checker(); 
-
-
-//----------------------------------------------------------
 
 // bij selectie tarief
 
