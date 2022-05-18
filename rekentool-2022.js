@@ -1,4 +1,4 @@
-console.log("We are online!!");
+console.log("Life from github!!");
 
 
 var soortopvang;
@@ -712,6 +712,11 @@ $(".back_btn").mousedown("click", function () {
   $(".back_btn").hide();
   checkAll();
 });
+
+
+
+
+
 
 // ---------------- Link to Code on webflow (.txt) --------------- //
 
