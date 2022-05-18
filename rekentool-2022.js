@@ -724,63 +724,20 @@ $(".back_btn").mousedown("click", function () {
 
 
 
+// ------------------- Responsive part -------------------- //
 
-//----- responsive --------- //
-// const opvang = document.querySelectorAll(".check_opvang");
-// const btnWrapper = document.querySelector(".btn-wrapper");
-// const check = ['voorschoolse','naschoolse','buitenschoolse','dag'];
-// const indicator = document.querySelector(".indicator");
+const soort_opvangX = document.querySelectorAll(".rk-opvang-wrapper");
+const keuze_txt = document.querySelector(".selectie-resp_indicator");
 
+function zien(){
+    for(let i=0; i<soort_opvangX.length; i++){
+          soort_opvangX[i].addEventListener('click', function doeClick(){
+              //console.log("zie " + soort_opvangX[i].innerText);
+      console.log("this-> " + keuze_txt.innerText);
+      keuze_txt.innerHTML = soort_opvangX[i].innerText;
+    })
+      }
 
-// function createBtns(){
-//   for(let i=0; i < check.length; i++){
-//     var btn = document.createElement("div");
-//     btn.className = "rt-btn";
-//     btn.innerText = check[i];
-//     btnWrapper.appendChild(btn);
-//   }
-// }
-// createBtns();
+  }
 
-
-
-// function checkingBox(){
-//     for(let i=0; i < btnWrapper.length; i++){
-//         btnWrapper[i].addEventListener('click', function handleClick(){
-//             if(btnWrapper[i].innerText == opvang[i].value){
-//               console.log(opvang[i].value);
-//               opvang[i].checked = true;
-//               indicator.textContent = btnWrapper[i].innerText;
-//             //   btnWrapper.classList.toggle('hide');
-            
-
-//             }
-//           })
-  
-//         }
-//   }
-
-// checkingBox();
-
-// function show(){
-//   btnWrapper.classList.toggle('hide');
-// }
-
-
-// //-------------- git commands ------------//
-// // git add .
-// // git commit -m "message..."
-// //git push
-// //-------------- git commands ------------//
-
-
-// const soort_opvangX = document.querySelectorAll(".rk-opvang-wrapper 2");
-  
-// function zien(){
-//     for(let i=0; i<soort_opvangX.length; i++){
-//           soort_opvangX[i].addEventListener('click', function doeClick(){
-//               console.log("zie" + soort_opvangX[i].innerText);
-//     })
-//       }
-
-//   }
+zien();
