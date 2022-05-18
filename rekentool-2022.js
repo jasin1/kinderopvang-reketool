@@ -28,8 +28,8 @@ let totaal_kosten = [];
 
 
 // Hides
-// $(".tarieven").hide();
-$(".tarieven").css("visibility", "hidden");
+$(".tarieven").hide();
+// $(".tarieven").css("visibility", "hidden");
 $(".dagen").hide();
 $(".rk-overzicht-wrapper").hide();
 $(".reken_btn").hide();
@@ -477,8 +477,8 @@ $('#formulier').change(function () {
 //---------------------------------------------------------
 
 $(".opvang-select").on('change', 'input[type=radio]', function () {
-    // $(".tarieven").fadeIn(120);
-    $(".tarieven").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
+    $(".tarieven").fadeIn(120);
+    // $(".tarieven").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
     $(".tarief-select").hide();
     $(".dag-select").hide();
 
