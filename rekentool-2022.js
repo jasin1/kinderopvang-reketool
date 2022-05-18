@@ -1,13 +1,5 @@
 console.log("We are online!!");
-//-------------- git commands ------------//
-// git add .
-// git commit -m "message..."
-//git push
-//-------------- git commands ------------//
 
-//console.log('tabon');
-
-// variables
 
 var soortopvang;
 var tarief = '0';
