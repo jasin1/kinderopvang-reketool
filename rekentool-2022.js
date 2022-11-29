@@ -597,8 +597,8 @@ $(".reken_btn").mousedown("click", function () {
 
       $("#send-dagen").val("maandag,dinsdag,woensdag,donderdag,vrijdag"); 
 
-      $(".extra_txt").html("U krijgt een korting van 30 uur bij dit gekozen opvang!");
-      $("#korting-txt").val("U krijgt een korting van 30 uur bij dit gekozen opvang!");
+      $(".extra_txt").html("U ontvangt op het totaal aantal uren van 5 dagen KDV 30 uur aan korting, in plaats van 260 uur zal het 230 uur zijn!");
+      $("#korting-txt").val("U ontvangt op het totaal aantal uren van 5 dagen KDV 30 uur aan korting, in plaats van 260 uur zal het 230 uur zijn!");
 
     } else{
       $(".extra_txt").html(" ");
