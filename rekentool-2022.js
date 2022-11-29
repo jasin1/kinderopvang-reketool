@@ -567,7 +567,7 @@ $(".reken_btn").mousedown("click", function () {
     // gekozen tarief
     $(".overzicht_tarief").html('&euro; ' +tarief);
     //hieronder wordt met mail mee verzonden
-    $("#send-tarief").val('â‚¬'+tarief);
+    $("#send-tarief").val('€'+tarief);
     $(".tarieven").hide();
     $(".dagen").hide();
 
@@ -589,16 +589,16 @@ $(".reken_btn").mousedown("click", function () {
 
       $("#send-opvang").val("KDV hele dagopvang (12 uur p/d)");  
 
-      $(".overzicht_kosten_totaal").html("â‚¬ 1875");
-      $("#send-totaal").val("â‚¬ 1875");  
+      $(".overzicht_kosten_totaal").html("€ 2013");
+      $("#send-totaal").val("€ 2013");  
 
-      $(".overzicht_uren_totaal").html("260");
-      $("#send-uren").val("260"); 
+      $(".overzicht_uren_totaal").html("230");
+      $("#send-uren").val("230"); 
 
       $("#send-dagen").val("maandag,dinsdag,woensdag,donderdag,vrijdag"); 
 
-      $(".extra_txt").html("U krijgt een halve dag gratis van ons bij dit gekozen opvang!");
-      $("#korting-txt").val("U krijgt een halve dag gratis van ons bij dit gekozen opvang!");
+      $(".extra_txt").html("U krijgt een korting van 30 uur bij dit gekozen opvang!");
+      $("#korting-txt").val("U krijgt een korting van 30 uur bij dit gekozen opvang!");
 
     } else{
       $(".extra_txt").html(" ");
@@ -624,7 +624,7 @@ $(".reken_btn").mousedown("click", function () {
         $(".overzicht_kosten_totaal").html( '&euro; ' +rounded);
         $(".overzicht_txt").fadeIn("slow");
 
-        $("#send-totaal").val('â‚¬ ' + rounded);
+        $("#send-totaal").val('€ ' + rounded);
         //console.log($("#send-totaal").val());
         var alldays = selected_weekdagen.join();
         $("#send-dagen").val(alldays);
