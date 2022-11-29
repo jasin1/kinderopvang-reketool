@@ -54,7 +54,7 @@ let voorschoolse_opvang = {
 
     tarief_2:
     {
-        tarief: '7.15',
+        tarief: '7.50',
         descrp: "VSO geheel opvang met vakantieopvang",
         maandag_uren: "18.67",
         dinsdag_uren: "18.67",
@@ -137,7 +137,7 @@ let naschoolse_opvang = {
     naam: "naschoolse",
     tarief_1:
     {
-        tarief: '7.50',
+        tarief: '7.70',
         descrp: "NSO zonder vakantie opvang",
         maandag_uren: "16.67",
         dinsdag_uren: "16.67",
@@ -149,7 +149,7 @@ let naschoolse_opvang = {
 
     tarief_2:
     {
-        tarief: '7.15',
+        tarief: '7.50',
         descrp: "NSO geheel opvang met vakantieopvang",
         maandag_uren: "28.67",
         dinsdag_uren: "28.67",
@@ -232,7 +232,7 @@ let buitenschoolse_opvang = {
     naam: "buitenschoolse",
     tarief_1:
     {
-        tarief: '7.15',
+        tarief: '7.50',
         descrp: "BSO met vakantieopvang",
         maandag_uren: "35.33",
         dinsdag_uren: "35.33",
@@ -244,7 +244,7 @@ let buitenschoolse_opvang = {
 
     tarief_2:
     {
-        tarief: '7.50',
+        tarief: '7.70',
         descrp: "BSO zonder vakantieopvang",
         maandag_uren: "23.33",
         dinsdag_uren: "23.33",
@@ -255,7 +255,7 @@ let buitenschoolse_opvang = {
 
     tarief_3:
     {
-        tarief: '8.00',
+        tarief: '8.50',
         descrp: "Alleen vakantieopvang",
         maandag_uren: "12",
         dinsdag_uren: "12",
@@ -358,7 +358,7 @@ let dag_opvang = {
     naam: "dag",
     tarief_1:
     {
-        tarief: '8.35',
+        tarief: '8.95',
         descrp: "KDV halve dagopvang (6 uur p/d)",
         maandag_uren: "26",
         dinsdag_uren: "26",
@@ -370,7 +370,7 @@ let dag_opvang = {
 
     tarief_2:
     {
-        tarief: '8.15',
+        tarief: '8.75',
         descrp: "KDV hele dagopvang (12 uur p/d)",
         maandag_uren: "52",
         dinsdag_uren: "52",
