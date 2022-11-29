@@ -42,7 +42,7 @@ let voorschoolse_opvang = {
     naam: "voorschoolse",
     tarief_1:
     {
-        tarief: '7.50',
+        tarief: '7.70',
         descrp: "VSO zonder vakantie opvang",
         maandag_uren: "6.67",
         dinsdag_uren: "6.67",
